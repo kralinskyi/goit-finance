@@ -1,3 +1,9 @@
+:root {
+  --auxiliary-color: #28a745;
+  --background-color: #f4f4f4;
+  --main-text-color: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -6,6 +12,11 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background-color);
 }
 
 img,
@@ -19,7 +30,7 @@ svg {
   font-style: normal;
 }
 
-button {
+.button {
   display: block;
   cursor: pointer;
   border: none;
@@ -30,13 +41,13 @@ button {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+*/
 
 .container {
-  width: 1200px;
+  width: 1360px;
   margin: 0 auto;
-  padding: 0 15px;
-} */
-
+  padding: 0 28px;
+}
 .list {
   margin: 0;
   padding-left: 0;
@@ -59,4 +70,25 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* -----------------Header-------------------- */
+
+.logo {
+  fill: #28a745;
+}
+
+.logo-finance {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.2;
+
+  color: var(--auxiliary-color);
+}
+
+.logo-ledger {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.2;
+  color: var(--main-text-color);
 }
