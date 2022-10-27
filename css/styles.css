@@ -2,6 +2,7 @@
   --auxiliary-color: #28a745;
   --background-color: #f4f4f4;
   --main-text-color: #fff;
+  --hero-text-color: #e9e9e9;
 }
 
 h1,
@@ -74,8 +75,9 @@ svg {
 
 /* -----------------Header-------------------- */
 
-.logo {
-  fill: #28a745;
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-finance {
@@ -90,5 +92,65 @@ svg {
   font-weight: 400;
   font-size: 35px;
   line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.nav > .list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 38px;
+  margin-left: auto;
+  padding-top: 21px;
+  padding-bottom: 20px;
+}
+
+.nav .link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--main-text-color);
+}
+
+/*-------------------Hero---------------------------*/
+
+.hero {
+  background-image: url(../images/background-hero.jpg);
+  margin-top: -70px;
+  width: 1360px;
+  height: 768px;
+}
+
+.hero-elements {
+  padding-top: 279px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 25px;
+
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 1.2;
+  color: var(--hero-text-color);
+}
+
+.hero .text {
+  margin-bottom: 29px;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.67;
+  color: var(--hero-text-color);
+}
+
+.btn {
+  background: var(--auxiliary-color);
+  border-radius: 5px;
+  padding: 10px 30px 9px 41px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+
   color: var(--main-text-color);
 }
