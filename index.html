@@ -21,11 +21,15 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!--------------Header------------------>
     <header>
       <div class="container header">
-        <a href="./index.html" class="link logo">
-          <span class="logo-finance">Finance </span><span class="logo-ledger">Ledger</span></a
-        >
+        <div class="logo-book">
+          <svg class="icon"><use href="./images/icons.svg#book"></use></svg>
+          <a href="./index.html" class="link logo">
+            <span class="logo-finance">Finance</span><span class="logo-ledger"> Ledger</span></a
+          >
+        </div>
         <nav class="nav">
           <ul class="list">
             <li><a href="./index.html" class="link">Home</a></li>
@@ -44,159 +48,182 @@
           <div class="hero-elements">
             <h1 class="title">The Sky Is The Limit</h1>
             <p class="text">We provide world class financial assistance</p>
-            <button type="button" class="btn">Read More</button>
+            <button type="button" class="button">Read More</button>
           </div>
         </div>
       </section>
       <!-----------About-------------->
       <section>
-        <div class="container">
-          <h2>About us</h2>
-          <ul class="list">
-            <li>
-              <svg></svg>
-              <h3>Investmant Banking</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, dolores.
-                Veritatis autem nobis, fugit sunt sint est. Quo, maiores sunt!
-              </p>
+        <div class="container container-about">
+          <h2 class="visually-hidden">About us</h2>
+          <ul class="list about">
+            <li class="item">
+              <div class="item-icon">
+                <svg class="icon"><use href="./images/icons.svg#university"></use></svg>
+              </div>
+              <div class="about-info">
+                <h3 class="subtitle">Investmant Banking</h3>
+                <p class="text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, dolores.
+                  Veritatis autem nobis, fugit sunt sint est. Quo, maiores sunt!
+                </p>
+              </div>
             </li>
-            <li>
-              <svg></svg>
-              <h3>Portfolio Manager</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est hic laborum incidunt
-                et, accusamus fuga reiciendis dignissimos minus laboriosam officia?
-              </p>
+            <li class="item">
+              <div class="item-icon">
+                <svg class="icon"><use href="images/icons.svg#group"></use></svg>
+              </div>
+              <div class="about-info">
+                <h3 class="subtitle">Portfolio Manager</h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est hic laborum incidunt
+                  et, accusamus fuga reiciendis dignissimos minus laboriosam officia?
+                </p>
+              </div>
             </li>
-            <li>
-              <svg></svg>
-              <h3>Tax & Custudio</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolores quisquam,
-                expedita quo soluta corporis eveniet incidunt magni doloribus nostrum?
-              </p>
+            <li class="item">
+              <div class="item-icon">
+                <svg class="icon"><use href="./images/icons.svg#pencil"></use></svg>
+              </div>
+              <div class="about-info">
+                <h3 class="subtitle">Tax & Custudio</h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolores quisquam,
+                  expedita quo soluta corporis eveniet incidunt magni doloribus nostrum?
+                </p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <!----------Who we?------------->
       <section>
-        <div class="container">
-          <img src="./images/" alt="" />
-          <p>What you are looking for</p>
-          <h2>We provide bespoke solutions</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam iusto
-            sequi, dolor obcaecati at, aliquam saepe nisi maiores, amet perspiciatis rem fugit vel.
-            Voluptas.
-          </p>
-          <button class="button">Read More</button>
+        <div class="container team">
+          <img src="./images/team.jpg" alt="company members" width="680" />
+          <div class="team-text">
+            <p class="text">What you are looking for</p>
+            <h2 class="subtitle">We provide bespoke solutions</h2>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam iusto
+              sequi, dolor obcaecati at, aliquam saepe nisi maiores, amet perspiciatis rem fugit
+              vel. Voluptas.
+            </p>
+            <button class="button">Read More</button>
+          </div>
         </div>
       </section>
       <!------------What we do-------------------->
       <section>
-        <div class="container">
-          <p>This is what we do</p>
-          <h2>Business Cases</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, eveniet?</p>
-          <ul class="list">
-            <li><img src="./images/our team.jpg" alt="our team" /></li>
-            <li><img src="./images/working on desk.jpg" alt="working on desk" /></li>
-            <li><img src="./images/shaking hands.jpg" alt="shaking hands" /></li>
-            <li><img src="./images/all hands.jpg" alt="all hands together" /></li>
-            <li><img src="./images/laptop.jpg" alt="laptop" /></li>
-            <li><img src="./images/buldings.jpg" alt="buldings" /></li>
-            <li><img src="./images/working.jpg" alt="our team working" /></li>
-            <li><img src="./images/smiling.jpg" alt="our team smiling" /></li>
+        <div class="container what">
+          <div class="what-we-do">
+            <p class="text">This is what we do</p>
+            <h2 class="subtitle">Business Cases</h2>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, eveniet?
+            </p>
+          </div>
+          <ul class="list gallery">
+            <li class="item"><img src="./images/our-team.jpg" alt="our team" /></li>
+            <li class="item"><img src="./images/working-on-desk.jpg" alt="working on desk" /></li>
+            <li class="item"><img src="./images/shaking-hands.jpg" alt="shaking hands" /></li>
+            <li class="item"><img src="./images/all-hands.jpg" alt="all hands together" /></li>
+            <li class="item"><img src="./images/laptop.jpg" alt="laptop" /></li>
+            <li class="item"><img src="./images/buldings.jpg" alt="buldings" /></li>
+            <li class="item"><img src="./images/working.jpg" alt="our team working" /></li>
+            <li class="item"><img src="./images/smiling.jpg" alt="our team smiling" /></li>
           </ul>
         </div>
       </section>
       <!-------------Blog------------------------>
       <section>
-        <div class="container">
-          <article>
-            <time datetime="2020-03-16">April 16 2020</time>
-            <h2>Blog Post One</h2>
-            <p>
+        <div class="container blog">
+          <article class="article">
+            <time datetime="2020-03-16" class="date">April 16 2020</time>
+            <h2 class="subtitle">Blog Post One</h2>
+            <p class="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aliquid, accusamus amet
               perferendis distinctio laboriosam perspiciatis quae sit error numquam voluptatibus
               porro saepe ratione vitae rerum quasi nesciunt dolor quas.
             </p>
-            <button class="button">Read Our Blog</button>
+            <button type="button" class="button">Read Our Blog</button>
           </article>
-          <img src="" alt="" />
+          <img src="./images/blog.jpg" alt="stuff on table" />
         </div>
       </section>
       <!-------------Who we are?---------------------->
       <section>
-        <div class="container">
-          <p>Who we are</p>
-          <h2>Our Professional Team</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, esse?</p>
-          <ul class="list">
-            <li>
-              <img src="" alt="" />
-              <h3>John Doe</h3>
-              <p>President</p>
+        <div class="container who">
+          <p class="text">Who we are</p>
+          <h2 class="subtitle">Our Professional Team</h2>
+          <p class="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, esse?
+          </p>
+          <ul class="list who-list">
+            <li class="item">
+              <img src="./images/john.jpg" alt="young man" />
+              <h3 class="names">John Doe</h3>
+              <p class="text">President</p>
             </li>
-            <li>
-              <img src="" alt="" />
-              <h3>Jane Doe</h3>
-              <p>Vice President</p>
+            <li class="item">
+              <img src="./images/jane.jpg" alt="young woman" />
+              <h3 class="names">Jane Doe</h3>
+              <p class="text">Vice President</p>
             </li>
-            <li>
-              <img src="" alt="" />
-              <h3>Steve Smith</h3>
-              <p>Marketing Head</p>
+            <li class="item">
+              <img src="./images/steve.jpg" alt="young man" />
+              <h3 class="names">Steve Smith</h3>
+              <p class="text">Marketing Head</p>
             </li>
           </ul>
         </div>
       </section>
       <!------------Contact us-------------------->
       <section>
-        <div class="container">
-          <img src="" alt="" />
-          <form action="" method="get">
-            <input type="text" />
-            <input type="text" />
+        <div class="container callback">
+          <img src="./images/callback.jpg" alt="man in office" />
+          <form action="" method="get" class="form">
+            <h2 class="subtitle">Request Callback</h2>
+            <input type="text" placeholder="Enter your name" class="input input-name" />
+            <input type="text" placeholder="Enter email*" class="input input-email" />
             <button class="button">Send</button>
           </form>
         </div>
       </section>
     </main>
-    <footer>
-      <ul class="list">
-        <li>
-          <a href="">
-            <svg>
-              <use></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href=""
-            ><svg>
-              <use></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href=""
-            ><svg>
-              <use></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href=""
-            ><svg>
-              <use></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <p>Copyright © 2021 - FinanceLedger</p>
+    <footer class="footer">
+      <div class="container">
+        <ul class="list footer-list">
+          <li class="item">
+            <a href="./images/icons.svg#facebook" class="link">
+              <svg class="icon">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a href="./images/icons.svg#twitter" class="link"
+              ><svg class="icon">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a href="./images/icons.svg#youtube" class="link"
+              ><svg class="icon">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a href="./images/icons.svg#linkedin" class="link"
+              ><svg class="icon">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="text">Copyright &#xA9 2021 - FinanceLedger</p>
+      </div>
     </footer>
   </body>
 </html>
