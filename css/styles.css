@@ -445,7 +445,7 @@ svg {
 /*------------------Footer----------------------------*/
 
 .footer > .container {
-  padding: 0;
+  padding: 20px 537px 16px;
   background-color: var(--subtitle-color);
   color: var(--main-text-color);
 }
@@ -459,7 +459,7 @@ svg {
 }
 
 .footer .icon {
-  width: 40px;
+  width: 35px;
   height: 35px;
 }
 
@@ -471,13 +471,14 @@ svg {
 }
 
 .footer .link {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   fill: #fff;
 }
+
 /* facebook fill="#fff" style="fill:var(--color2, #fff)" */
 /* twitter  fill="#fff" style="fill:var(--color2, #fff)"*/
 /* youtube fill="#fff" style="fill:var(--color2, #fff)" */
