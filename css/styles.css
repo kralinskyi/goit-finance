@@ -168,6 +168,8 @@ svg {
 
 .container-about {
   padding: 40px 66px 19px;
+
+  background-color: var(--second-background-color);
 }
 
 .about {
