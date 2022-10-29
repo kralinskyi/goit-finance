@@ -348,7 +348,7 @@ svg {
   background-color: inherit;
 }
 
-/*----------------Why we are?---------------------*/
+/*----------------Who we are?---------------------*/
 
 .container.who {
   padding: 49px 30px 59px;
@@ -401,7 +401,8 @@ svg {
 .who-list .text:only-of-type {
   margin: 0;
 }
-/*---------------Contact us-------------------*/
+
+/*---------------------------------------------Contact us-------------------*/
 
 .callback {
   padding: 0;
