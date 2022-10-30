@@ -70,6 +70,10 @@ svg {
   overflow: hidden;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* -----------------Header-------------------- */
 
 .header {
@@ -353,7 +357,6 @@ svg {
 .container.who {
   padding: 49px 30px 59px;
 
-  text-align: center;
   color: var(--subtitle-color);
 }
 
@@ -400,6 +403,51 @@ svg {
 
 .who-list .text:only-of-type {
   margin: 0;
+}
+
+.list-social .icon {
+  width: 40px;
+  height: 35px;
+  fill: #fff;
+}
+
+.list.list-social {
+  display: flex;
+  gap: 25px;
+}
+
+.list-social {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+
+  opacity: 0;
+}
+
+.hover-social {
+  position: relative;
+}
+
+.hover-social::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 0px;
+  opacity: 0;
+}
+
+.hover-social:hover .list-social {
+  opacity: 1;
+}
+
+.hover-social:hover::before {
+  opacity: 1;
 }
 
 /*---------------------------------------------Contact us-------------------*/
